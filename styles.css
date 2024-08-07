@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#home {
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+#home .intro {
+    text-align: center;
+}
+.profile-img {
+    border-radius: 50%; /* Makes the image round */
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Ensure the image is a perfect circle */
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+}
+
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer a {
+    text-decoration: none;
+}
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+.card-link::after {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-link:hover .card-title,
+.card-link:hover .card-text {
+    text-decoration: none;
+    color: inherit;
+}
+
